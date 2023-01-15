@@ -31,24 +31,24 @@ $ sudo apt-get install ros-noetic-navigation
 Download the package and place it inside the `/src` folder in your workspace. And then compile using `catkin_make`.
 
 # Run
-The `slam_view.launch` file in the `/launch` folder launches the pre-configured SLAM node, the move_base node, and the rviz interface. When you start a simulated environment or run the driver on a real robot, you can launch these nodes with the following command.
+1-The `slam_view.launch` file in the `/launch` folder launches the pre-configured SLAM node, the move_base node, and the rviz interface. When you start a simulated environment or run the driver on a real robot, you can launch these nodes with the following command.
 
 ```
 roslaunch explore_k slam_view.launch
 ```
 
-You can then use the following command to start the autonomous exploration program:
+2-You can then use the following command to start the autonomous exploration program:
 
 ```
 roslaunch explore_k explore.launch
 ```
 
-Click `Publish Point` at the top of RViz.
+3-Click `Publish Point` at the top of RViz.
 
-Click **a single corner** of n corners of the region (n=4 if your region is square/rectangular, to be pedantic)．
+4-Click **a single corner** of n corners of the region (n=4 if your region is square/rectangular, to be pedantic)．
 
-Repeat step 6 and 7 above for n times. After that you'll see a polygon with n corners.
+5-Repeat step 3 and 4 above for n times. After that you'll see a polygon with n corners.
 
-Do the step 6 once again, then this time click anywhere within the polygon.
+6-Do the step 3 once again, then this time click anywhere within the polygon.
 
-Finally, exploration start.
+7-Finally, exploration start.
