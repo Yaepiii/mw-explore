@@ -1,8 +1,0 @@
-<launch>
-  <!--Your slam node-->
-  <include file="$(find explore_k)/launch/include/gmapping.launch.xml"/>
-
-  <!-- Move base -->
- <include file="$(find explore_k)/launch/include/move_base.launch.xml"/>
- 
-</launch>
