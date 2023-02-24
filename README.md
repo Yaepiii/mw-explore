@@ -1,5 +1,5 @@
-# k-explore
-Multi-weight independent exploration procedures, can be user - designated areas for independent exploration
+# wm-explore
+Multi-Weight independent exploration procedures, can be user - designated areas for independent exploration
 
 This feature pack contains the following folders:
 
@@ -7,7 +7,7 @@ This feature pack contains the following folders:
 
 - exploration_msgs : defines some service and action used in explore_k
 
-- explore_k : includes the node that contains the main exploration function
+- mw-exploration : includes the node that contains the main exploration function
 
 - polygon_layer : the self-defining costmap layer in order to limit exploration area
 
@@ -34,13 +34,13 @@ Download the package and place it inside the `/src` folder in your workspace. An
 1-The `slam_view.launch` file in the `/launch` folder launches the pre-configured SLAM node, the move_base node, and the rviz interface. When you start a simulated environment or run the driver on a real robot, you can launch these nodes with the following command.
 
 ```
-roslaunch explore_k slam_view.launch
+roslaunch mw-exploration slam_view.launch
 ```
 
 2-You can then use the following command to start the autonomous exploration program:
 
 ```
-roslaunch explore_k explore.launch
+roslaunch mw-exploration explore.launch
 ```
 
 3-Click `Publish Point` at the top of RViz.
